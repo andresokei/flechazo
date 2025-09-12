@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>flechazo.studio — Más matches con mejores fotos</title>
-<meta name="description" content="Sesión presencial en Asturias para tu perfil de citas. 60’, 12–15 fotos editadas, dirección de pose y entrega 24–48h. Discreción absoluta. Lanzamiento 49€ para las primeras reservas.">
+<meta name="description" content="Sesión presencial en Asturias para tu perfil de citas. 60’, 12–15 fotos editadas, retratos naturales y entrega 24–48h. Discreción absoluta. Lanzamiento 49€ para las primeras reservas.">
 <meta name="theme-color" content="#FF4D4D">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,14 +21,12 @@
   .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid #ffd1d1;background:#fff6f6;color:#C52828;border-radius:999px;font-weight:700;font-size:13px}
   .pill{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-weight:600;font-size:13px;background:#fff}
 
-  /* NAV */
   .nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
   .logo{display:flex;gap:10px;align-items:center}
   .logo img{height:28px;width:auto;display:block}
   .brand{font-family:Manrope,Inter,sans-serif;font-weight:800;letter-spacing:-.2px}
 
-  /* HERO */
   header.container{padding-block:clamp(40px,8vw,96px)}
   h1{font-family:Manrope,Inter,sans-serif;font-size:clamp(30px,5vw,58px);line-height:1.04;letter-spacing:-.5px;margin:.2rem 0 .8rem}
   .sub{color:var(--muted);font-size:clamp(16px,2.2vw,19px);max-width:720px;margin:10px 0 18px}
@@ -36,7 +34,6 @@
   .points li{margin:10px 0;padding-left:28px;position:relative}
   .points li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brand);font-weight:800}
 
-  /* SECTIONS */
   section{padding: clamp(36px,7vw,72px) 0;border-top:1px solid var(--line)}
   h2{font-family:Manrope,Inter,sans-serif;font-size:clamp(22px,3vw,32px);letter-spacing:-.3px;margin:0 0 12px}
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
@@ -45,16 +42,13 @@
   .card{border:1px solid var(--line);border-radius:var(--r);padding:18px;background:#fff}
   .price{font-family:Manrope,Inter,sans-serif;font-size:42px;letter-spacing:-.4px;margin:6px 0}
 
-  /* Progress */
   .progress{height:8px;background:#F3F3F3;border-radius:999px;overflow:hidden}
   .progress i{display:block;height:100%;width:var(--p,0%);background:var(--brand)}
 
-  /* Sticky mobile CTA */
   .sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;display:none;padding:10px 16px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
   .sticky .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
   @media (max-width:740px){.sticky{display:block}}
 
-  /* FOOTER */
   footer{border-top:1px solid var(--line);padding:24px 0;color:#333}
 </style>
 </head>
@@ -67,26 +61,34 @@
       <img src="assets/logo.png" alt="flechazo.studio">
       <div class="brand">flechazo<span style="opacity:.85">.studio</span></div>
     </div>
-    <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar</a>
+    <!-- Botón abre popup Cal.com -->
+    <a class="btn btn-primary"
+       data-cal-link="andres-okei-i3tkk7/sesion-60-asturias"
+       data-cal-namespace="sesion-60-asturias"
+       data-cal-config='{"layout":"month_view"}'
+       href="#">Reservar</a>
   </div>
 </div>
 
 <main>
   <!-- HERO -->
   <header class="container">
-    <!-- <span class="badge">Lanzamiento 49€ — solo <b id="plazas-hero"></b> primeras reservas</span> -->
     <h1>¿Quieres más matches?<br>Empieza mejorando tus fotos.</h1>
     <p class="sub">
-      Destaca en las apps de citas con fotos que de verdad te favorecen. 
+      Destaca en las apps de citas con fotos que de verdad te favorecen.
       Adiós a selfies cutres y poses forzadas. Ponte en nuestras manos y <b>consigue más matches.</b>
     </p>
     <ul class="points">
-      <li><b>12–15 fotos</b> de calidad (listas para <b>Tinder/Bumble/Hinge</b> )</li>
+      <li><b>12–15 fotos</b> de calidad (listas para <b>Tinder/Bumble/Hinge</b>)</li>
       <li><b>Retratos profesionales</b> sin poses forzadas, <b>naturales y auténticos</b></li>
-      <li> <b>Discreción total</b>: nunca se publica nada, tu tienes el control de tus fotos</li>
+      <li><b>Discreción total</b>: nunca se publica nada, tú tienes el control de tus fotos</li>
     </ul>
-    <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Quiero mi sesión</a>
-    <div class="muted" style="margin-top:10px">Bloquea el precio hoy con una señal de 10€ por Bizum.</div>
+    <a class="btn btn-primary"
+       data-cal-link="andres-okei-i3tkk7/sesion-60-asturias"
+       data-cal-namespace="sesion-60-asturias"
+       data-cal-config='{"layout":"month_view"}'
+       href="#">Quiero mi sesión</a>
+    <div class="muted" style="margin-top:10px">Bloquea el precio hoy con una <b>señal de 10€</b> con tarjeta (Stripe).</div>
   </header>
 
   <!-- BENEFICIOS -->
@@ -95,9 +97,9 @@
       <h2>Beneficios de reservar</h2>
       <div class="grid2">
         <div class="card"><strong>Más matches y mejores conversaciones</strong><p class="muted">Retratos que convierten vistas en interés real.</p></div>
-        <div class="card"><strong>Te ves natural y favorecedor</strong><p class="muted">Ángulos, luz y expresión guiadas por profesionales.</p></div>
-        <div class="card"><strong>Perfil optimizado</strong><p class="muted">Te ayudamos con el orden de fotos y selección para tu bio.</p></div>
-        <div class="card"><strong>Rápido y sin líos</strong><p class="muted">Sesión de 60’ y entrega en 24–48h. Reserva directa por WhatsApp.</p></div>
+        <div class="card"><strong>Te ves natural y favorecedor</strong><p class="muted">Ángulos, luz y expresión trabajadas para sacar tu mejor versión.</p></div>
+        <div class="card"><strong>Perfil optimizado</strong><p class="muted">Te ayudamos con el orden de fotos y la selección para tu bio.</p></div>
+        <div class="card"><strong>Rápido y sin líos</strong><p class="muted">Sesión de 60’ y entrega en 24–48h. Reserva online en minutos.</p></div>
         <div class="card"><strong>Discreción total</strong><p class="muted">Sesión privada. Nada se publica sin tu permiso.</p></div>
         <div class="card"><strong>Garantía</strong><p class="muted">Si no te ves bien, añadimos 20’ extra sin coste.</p></div>
       </div>
@@ -109,8 +111,8 @@
     <div class="container">
       <h2>Así funciona</h2>
       <div class="grid3">
-        <div class="card"><strong>1) Reserva por WhatsApp</strong><p class="muted">Elige ciudad y hora. Señal 10€ por Bizum para fijar hueco.</p></div>
-        <div class="card"><strong>2) Sesión de 60’</strong><p class="muted">2–3 looks, guía de pose, luz y fondos que favorecen.</p></div>
+        <div class="card"><strong>1) Reserva online</strong><p class="muted">Elige ciudad y hora. <b>Señal de 10€</b> con tarjeta para fijar el hueco.</p></div>
+        <div class="card"><strong>2) Sesión de 60’</strong><p class="muted">2–3 looks, guía básica en cámara, luz y fondos que favorecen.</p></div>
         <div class="card"><strong>3) Entrega 24–48h</strong><p class="muted">12–15 fotos en alta + versión optimizada para apps.</p></div>
       </div>
     </div>
@@ -135,8 +137,12 @@
             <li>12–15 fotos editadas + B/N</li>
             <li>Entrega 24–48h</li>
           </ul>
-          <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar por WhatsApp</a>
-          <div class="muted" style="margin-top:10px">La señal de 10€ bloquea el precio de lanzamiento aunque la sesión sea más adelante.</div>
+          <a class="btn btn-primary"
+             data-cal-link="andres-okei-i3tkk7/sesion-60-asturias"
+             data-cal-namespace="sesion-60-asturias"
+             data-cal-config='{"layout":"month_view"}'
+             href="#">Reservar ahora</a>
+          <div class="muted" style="margin-top:10px">La <b>señal de 10€</b> bloquea el precio de lanzamiento aunque la sesión sea más adelante.</div>
         </div>
 
         <div class="card">
@@ -161,7 +167,11 @@
     </div>
     <div style="display:flex;gap:12px;align-items:center">
       <a href="https://instagram.com/flechazostudio_" target="_blank" rel="noopener">Instagram</a>
-      <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar</a>
+      <a class="btn btn-primary"
+         data-cal-link="andres-okei-i3tkk7/sesion-60-asturias"
+         data-cal-namespace="sesion-60-asturias"
+         data-cal-config='{"layout":"month_view"}'
+         href="#">Reservar</a>
     </div>
   </div>
 </footer>
@@ -170,36 +180,65 @@
 <div class="sticky">
   <div class="container row">
     <div><strong>Lanzamiento 49€</strong> · Quedan <b id="plazas-sticky"></b></div>
-    <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar ahora</a>
+    <a class="btn btn-primary"
+       data-cal-link="andres-okei-i3tkk7/sesion-60-asturias"
+       data-cal-namespace="sesion-60-asturias"
+       data-cal-config='{"layout":"month_view"}'
+       href="#">Reservar ahora</a>
   </div>
 </div>
 
+<!-- Urgencia / plazas -->
 <script>
-  // === Ajusta estos valores para tu oferta ===
-  const PLAZAS_TOTALES   = 10;  // número de plazas de lanzamiento
-  const PLAZAS_RESTANTES = 6;   // AJUSTA MANUALMENTE según reservas reales
-  const WA_BASE = "ENLACE_WHATSAPP"; // tu enlace corto de WhatsApp Business
+  const PLAZAS_TOTALES   = 10;
+  const PLAZAS_RESTANTES = 6;
 
-  // Escasez visible
-  const ocupadas = Math.max(0, PLAZAS_TOTALES - PLAZAS_RESTANTES);
-  const pct = Math.min(100, Math.max(0, (ocupadas / PLAZAS_TOTALES) * 100));
-  document.getElementById("plazas-hero").textContent   = PLAZAS_TOTALES;
-  document.getElementById("plazas-precio").textContent = PLAZAS_TOTALES;
-  document.getElementById("plazas-sticky").textContent = PLAZAS_RESTANTES;
-  document.getElementById("ocupadas").textContent      = ocupadas;
-  document.getElementById("total").textContent         = PLAZAS_TOTALES;
-  document.getElementById("bar").style.setProperty("--p", pct + "%");
+  (function(){
+    const ocupadas = Math.max(0, PLAZAS_TOTALES - PLAZAS_RESTANTES);
+    const pct = Math.min(100, Math.max(0, (ocupadas / PLAZAS_TOTALES) * 100));
+    const byId = id => document.getElementById(id);
 
-  // Prefill de WhatsApp (mensaje + UTM si hay)
-  const msg = "Hola, vengo de flechazo.studio. Quiero reservar la oferta de lanzamiento (49€). ¿Tienes hueco esta semana?";
-  const params = "text=" + encodeURIComponent(msg);
-  document.querySelectorAll("[data-wa]").forEach(a=>{
-    try{
-      const hasQuery = WA_BASE.includes("?");
-      a.href = WA_BASE + (hasQuery ? "&" : "?") + params + (location.search ? "&" + location.search.slice(1) : "");
-      a.setAttribute("rel","noopener nofollow");
-      a.setAttribute("target","_blank");
-    }catch(e){}
+    if (byId("plazas-precio")) byId("plazas-precio").textContent = PLAZAS_TOTALES;
+    if (byId("plazas-sticky")) byId("plazas-sticky").textContent = PLAZAS_RESTANTES;
+    if (byId("ocupadas"))      byId("ocupadas").textContent = ocupadas;
+    if (byId("total"))         byId("total").textContent = PLAZAS_TOTALES;
+    if (byId("bar"))           byId("bar").style.setProperty("--p", pct + "%");
+  })();
+</script>
+
+<!-- Cal element-click embed (oficial con namespace) -->
+<link rel="stylesheet" href="https://app.cal.com/embed/embed.css" />
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal; let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {}; cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1]; api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  // Inicializa el namespace de tu evento
+  Cal("init", "sesion-60-asturias", { origin:"https://app.cal.com" });
+
+  // Config básica del popup (tema/maquetación)
+  Cal.ns["sesion-60-asturias"]("ui", {
+    hideEventTypeDetails: false,
+    layout: "month_view"
   });
 </script>
 </body>
