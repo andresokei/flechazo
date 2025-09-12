@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>flechazo.studio — Más matches con mejores fotos</title>
+<meta name="description" content="Sesión presencial en Asturias para tu perfil de citas. 60’, 12–15 fotos editadas, dirección de pose y entrega 24–48h. Discreción absoluta. Lanzamiento 49€ para las primeras reservas.">
+<meta name="theme-color" content="#FF4D4D">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--brand:#FF4D4D;--ink:#0D0E10;--muted:#666;--line:#EAEAEA;--r:14px}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#fff;color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  a{color:inherit;text-decoration:none}
+  .container{max-width:980px;margin:0 auto;padding-inline:clamp(24px,6vw,48px)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:12px;border:1px solid var(--line);font-weight:600;cursor:pointer}
+  .btn-primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .muted{color:var(--muted)}
+  .badge{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid #ffd1d1;background:#fff6f6;color:#C52828;border-radius:999px;font-weight:700;font-size:13px}
+  .pill{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-weight:600;font-size:13px;background:#fff}
+
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;gap:10px;align-items:center}
+  .logo img{height:28px;width:auto;display:block}
+  .brand{font-family:Manrope,Inter,sans-serif;font-weight:800;letter-spacing:-.2px}
+
+  /* HERO */
+  header.container{padding-block:clamp(40px,8vw,96px)}
+  h1{font-family:Manrope,Inter,sans-serif;font-size:clamp(30px,5vw,58px);line-height:1.04;letter-spacing:-.5px;margin:.2rem 0 .8rem}
+  .sub{color:var(--muted);font-size:clamp(16px,2.2vw,19px);max-width:720px;margin:10px 0 18px}
+  .points{list-style:none;margin-block:16px 22px;padding:0}
+  .points li{margin:10px 0;padding-left:28px;position:relative}
+  .points li::before{content:"✓";position:absolute;left:0;top:0;color:var(--brand);font-weight:800}
+
+  /* SECTIONS */
+  section{padding: clamp(36px,7vw,72px) 0;border-top:1px solid var(--line)}
+  h2{font-family:Manrope,Inter,sans-serif;font-size:clamp(22px,3vw,32px);letter-spacing:-.3px;margin:0 0 12px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  @media (max-width:900px){.grid3,.grid2{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line);border-radius:var(--r);padding:18px;background:#fff}
+  .price{font-family:Manrope,Inter,sans-serif;font-size:42px;letter-spacing:-.4px;margin:6px 0}
+
+  /* Progress */
+  .progress{height:8px;background:#F3F3F3;border-radius:999px;overflow:hidden}
+  .progress i{display:block;height:100%;width:var(--p,0%);background:var(--brand)}
+
+  /* Sticky mobile CTA */
+  .sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;display:none;padding:10px 16px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
+  .sticky .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  @media (max-width:740px){.sticky{display:block}}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line);padding:24px 0;color:#333}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="container nav-in">
+    <div class="logo">
+      <img src="assets/logo.png" alt="flechazo.studio">
+      <div class="brand">flechazo<span style="opacity:.85">.studio</span></div>
+    </div>
+    <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar</a>
+  </div>
+</div>
+
+<main>
+  <!-- HERO -->
+  <header class="container">
+    <span class="badge">Lanzamiento 49€ — solo <b id="plazas-hero"></b> primeras reservas</span>
+    <h1>¿Sin matches?<br>Empieza mejorando tus fotos.</h1>
+    <p class="sub">
+      Sácate todo el partido. Destaca en las apps de citas con fotos que de verdad te favorecen.
+      Adiós a selfies cutres y poses forzadas. Ponte en nuestras manos y consigue más matches.
+    </p>
+    <ul class="points">
+      <li>12–15 fotos editadas (listas para Tinder/Bumble/Hinge)</li>
+      <li>Dirección de pose y asesoría de vestuario</li>
+      <li>Discreción total: nunca se publica sin permiso</li>
+    </ul>
+    <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Quiero mi sesión</a>
+    <div class="muted" style="margin-top:10px">Bloquea el precio hoy con una señal de 10€ por Bizum.</div>
+  </header>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios">
+    <div class="container">
+      <h2>Beneficios de reservar</h2>
+      <div class="grid2">
+        <div class="card"><strong>Más matches y mejores conversaciones</strong><p class="muted">Retratos que convierten vistas en interés real.</p></div>
+        <div class="card"><strong>Te ves natural y favorecedor</strong><p class="muted">Ángulos, luz y expresión guiadas por profesionales.</p></div>
+        <div class="card"><strong>Perfil optimizado</strong><p class="muted">Te ayudamos con el orden de fotos y selección para tu bio.</p></div>
+        <div class="card"><strong>Rápido y sin líos</strong><p class="muted">Sesión de 60’ y entrega en 24–48h. Reserva directa por WhatsApp.</p></div>
+        <div class="card"><strong>Discreción total</strong><p class="muted">Sesión privada. Nada se publica sin tu permiso.</p></div>
+        <div class="card"><strong>Garantía</strong><p class="muted">Si no te ves bien, añadimos 20’ extra sin coste.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section>
+    <div class="container">
+      <h2>Así funciona</h2>
+      <div class="grid3">
+        <div class="card"><strong>1) Reserva por WhatsApp</strong><p class="muted">Elige ciudad y hora. Señal 10€ por Bizum para fijar hueco.</p></div>
+        <div class="card"><strong>2) Sesión de 60’</strong><p class="muted">2–3 looks, guía de pose, luz y fondos que favorecen.</p></div>
+        <div class="card"><strong>3) Entrega 24–48h</strong><p class="muted">12–15 fotos en alta + versión optimizada para apps.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIO + URGENCIA -->
+  <section>
+    <div class="container">
+      <h2>Oferta de lanzamiento</h2>
+      <div class="grid3" style="align-items:start">
+        <div class="card" style="border:2px solid var(--brand)">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+            <span class="badge">49€ para las <b id="plazas-precio"></b> primeras reservas</span>
+            <span class="pill">Precio habitual: 99€</span>
+          </div>
+          <div class="price">49€</div>
+          <div class="progress" style="margin:6px 0 10px"><i id="bar"></i></div>
+          <div class="muted" style="margin-bottom:8px">Plazas de lanzamiento ocupadas: <b id="ocupadas"></b>/<b id="total"></b></div>
+
+          <ul class="points" style="margin-top:10px">
+            <li>Sesión 60’ en Asturias</li>
+            <li>12–15 fotos editadas + B/N</li>
+            <li>Entrega 24–48h</li>
+          </ul>
+          <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar por WhatsApp</a>
+          <div class="muted" style="margin-top:10px">La señal de 10€ bloquea el precio de lanzamiento aunque la sesión sea más adelante.</div>
+        </div>
+
+        <div class="card">
+          <strong>Discreción</strong>
+          <p class="muted">Sesión privada. Elegimos lugares y horarios tranquilos. Nada se comparte sin tu permiso.</p>
+        </div>
+        <div class="card">
+          <strong>Garantía</strong>
+          <p class="muted">Si no te ves bien, añadimos 20’ extra sin coste para asegurar un resultado con el que te identifiques.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:10px">
+      <img src="assets/logo.png" alt="flechazo.studio" style="height:20px;width:auto;display:block">
+      <strong>flechazo.studio</strong>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a href="https://instagram.com/flechazo.studio" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky">
+  <div class="container row">
+    <div><strong>Lanzamiento 49€</strong> · Quedan <b id="plazas-sticky"></b></div>
+    <a class="btn btn-primary" data-wa href="ENLACE_WHATSAPP">Reservar ahora</a>
+  </div>
+</div>
+
+<script>
+  // === Ajusta estos valores para tu oferta ===
+  const PLAZAS_TOTALES   = 10;  // número de plazas de lanzamiento
+  const PLAZAS_RESTANTES = 6;   // AJUSTA MANUALMENTE según reservas reales
+  const WA_BASE = "ENLACE_WHATSAPP"; // tu enlace corto de WhatsApp Business
+
+  // Escasez visible
+  const ocupadas = Math.max(0, PLAZAS_TOTALES - PLAZAS_RESTANTES);
+  const pct = Math.min(100, Math.max(0, (ocupadas / PLAZAS_TOTALES) * 100));
+  document.getElementById("plazas-hero").textContent   = PLAZAS_TOTALES;
+  document.getElementById("plazas-precio").textContent = PLAZAS_TOTALES;
+  document.getElementById("plazas-sticky").textContent = PLAZAS_RESTANTES;
+  document.getElementById("ocupadas").textContent      = ocupadas;
+  document.getElementById("total").textContent         = PLAZAS_TOTALES;
+  document.getElementById("bar").style.setProperty("--p", pct + "%");
+
+  // Prefill de WhatsApp (mensaje + UTM si hay)
+  const msg = "Hola, vengo de flechazo.studio. Quiero reservar la oferta de lanzamiento (49€). ¿Tienes hueco esta semana?";
+  const params = "text=" + encodeURIComponent(msg);
+  document.querySelectorAll("[data-wa]").forEach(a=>{
+    try{
+      const hasQuery = WA_BASE.includes("?");
+      a.href = WA_BASE + (hasQuery ? "&" : "?") + params + (location.search ? "&" + location.search.slice(1) : "");
+      a.setAttribute("rel","noopener nofollow");
+      a.setAttribute("target","_blank");
+    }catch(e){}
+  });
+</script>
+</body>
+</html>
