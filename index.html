@@ -45,16 +45,10 @@
   .card{border:1px solid var(--line);border-radius:var(--r);padding:18px;background:#fff}
   .price{font-family:Manrope,Inter,sans-serif;font-size:42px;letter-spacing:-.4px;margin:6px 0}
 
-  /* Progress */
-  .progress{height:8px;background:#F3F3F3;border-radius:999px;overflow:hidden}
-  .progress i{display:block;height:100%;width:var(--p,0%);background:var(--brand)}
-
-  /* Sticky mobile CTA */
+  /* FOOTER / STICKY */
   .sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;display:none;padding:10px 16px;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line)}
   .sticky .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
   @media (max-width:740px){.sticky{display:block}}
-
-  /* FOOTER */
   footer{border-top:1px solid var(--line);padding:24px 0;color:#333}
 </style>
 </head>
@@ -91,7 +85,10 @@
        data-cal-link="andres-okei-i3tkk7/sesion-60-asturias"
        data-cal-namespace="sesion-60-asturias"
        data-cal-config='{"layout":"month_view","theme":"light"}'>Quiero mi sesión</a>
-    <div class="muted" style="margin-top:10px">Bloquea el precio hoy con una señal de 10€ por Bizum.</div>
+    <div class="muted" style="margin-top:10px">
+      La <b>señal de 10€</b> asegura tu hueco y <b>no es reembolsable</b>.  
+      El resto (39€) se paga el día de la sesión.
+    </div>
   </header>
 
   <!-- BENEFICIOS -->
@@ -105,6 +102,56 @@
         <div class="card"><strong>Rápido y sin líos</strong><p class="muted">Sesión de 60’ y entrega en 24–48h.</p></div>
         <div class="card"><strong>Discreción total</strong><p class="muted">Sesión privada. Nada se publica sin tu permiso.</p></div>
         <div class="card"><strong>Garantía</strong><p class="muted">Si no te ves bien, añadimos 20’ extra sin coste.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASÍ FUNCIONA (restaurado) -->
+  <section>
+    <div class="container">
+      <h2>Así funciona</h2>
+      <div class="grid3">
+        <div class="card"><strong>1) Reserva online</strong><p class="muted">Elige ciudad y hora. <b>Señal de 10€</b> para fijar el hueco.</p></div>
+        <div class="card"><strong>2) Sesión de 60’</strong><p class="muted">2–3 looks, guía básica en cámara, luz y fondos que favorecen.</p></div>
+        <div class="card"><strong>3) Entrega 24–48h</strong><p class="muted">12–15 fotos en alta + versión optimizada para apps.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA + POLÍTICA (restaurado) -->
+  <section>
+    <div class="container">
+      <h2>Oferta de lanzamiento</h2>
+      <div class="grid3" style="align-items:start">
+        <div class="card" style="border:2px solid var(--brand)">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
+            <span class="badge">49€ — plazas limitadas</span>
+            <span class="pill">Precio habitual: 99€</span>
+          </div>
+          <div class="price">49€</div>
+          <ul class="points" style="margin-top:10px">
+            <li>Sesión 60’ en Asturias</li>
+            <li>12–15 fotos editadas + B/N</li>
+            <li>Entrega 24–48h</li>
+          </ul>
+          <a class="btn btn-primary"
+             data-cal-link="andres-okei-i3tkk7/sesion-60-asturias"
+             data-cal-namespace="sesion-60-asturias"
+             data-cal-config='{"layout":"month_view","theme":"light"}'>Reservar ahora</a>
+          <div class="muted" style="margin-top:10px">
+             La <b>señal de 10€</b> asegura tu hueco y <b>no es reembolsable</b>.  
+            El resto (39€) se paga el día de la sesión.
+          </div>
+        </div>
+
+        <div class="card">
+          <strong>Discreción</strong>
+          <p class="muted">Sesión privada. Elegimos lugares y horarios tranquilos. Nada se comparte sin tu permiso.</p>
+        </div>
+        <div class="card">
+          <strong>Garantía</strong>
+          <p class="muted">Si no te ves bien, añadimos 20’ extra sin coste para asegurar un resultado con el que te identifiques.</p>
+        </div>
       </div>
     </div>
   </section>
