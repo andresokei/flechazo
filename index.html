@@ -402,5 +402,26 @@ src="https://www.facebook.com/tr?id=1102522818621462&ev=PageView&noscript=1"
   });
 </script>
 
+<script>
+  // Marca como Lead cualquier clic que abra el flujo de reserva (Cal.com)
+  (function () {
+    function trackLeadOnce(e) {
+      try {
+        if (window._leadTracked) return; // evita doble disparo
+        window._leadTracked = true;
+        fbq('track', 'Lead');
+        setTimeout(function(){ window._leadTracked = false; }, 1500);
+      } catch(_) {}
+    }
+    // selecciona cualquier enlace/botón con data-cal-link
+    var calTriggers = document.querySelectorAll('[data-cal-link]');
+    calTriggers.forEach(function (el) {
+      el.addEventListener('click', trackLeadOnce);
+      el.addEventListener('touchstart', trackLeadOnce, {passive:true});
+    });
+  })();
+</script>
+
+
 </body>
 </html>

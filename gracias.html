@@ -10,6 +10,24 @@
     h1 { color:#FF4D4D; }
     a.btn { display:inline-block; margin-top:20px; background:#FF4D4D; color:#fff; padding:12px 20px; border-radius:10px; text-decoration:none; font-weight:bold; }
   </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1102522818621462'); // tu Pixel ID
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1102522818621462&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
   <div class="box">
@@ -19,5 +37,10 @@
     <p>Si quieres coordinar detalles, escríbeme directamente por WhatsApp:</p>
     <a class="btn" href="https://wa.me/34695882584" target="_blank">Hablar por WhatsApp</a>
   </div>
+
+  <!-- Evento de compra (señal 10 €) -->
+  <script>
+    fbq('track', 'Purchase', { value: 10.00, currency: 'EUR' });
+  </script>
 </body>
 </html>
